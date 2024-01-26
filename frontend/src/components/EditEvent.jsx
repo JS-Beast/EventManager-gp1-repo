@@ -17,7 +17,7 @@ function EditEvent({ events, onUpdate }) {
     const event = events.find((event) => event.id === eventId);
     if (event) {
       setEdit({
-        eventname: event.name,
+        name: event.name,
         date: event.date,
         time: event.time,
         description: event.description,
@@ -45,8 +45,8 @@ function EditEvent({ events, onUpdate }) {
         <label htmlFor="eventname">Event Name</label>
         <input
           type="text"
-          name="eventname"
-          value={edit.eventname}
+          name="name"
+          value={edit.name}
           onChange={(e) => handleChange(e)}
         />
         <br />

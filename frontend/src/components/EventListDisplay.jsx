@@ -10,6 +10,7 @@ function EventListDisplay({events}){
     }
     return(
     <div>
+        <h1>Events Chart</h1>
     <ul>
         {events.map((event)=>(
             <li key={event.id}>
